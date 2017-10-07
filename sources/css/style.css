@@ -5,6 +5,19 @@ body{
 li>a {
     color: #116480 !important;
 }
+.mt-15{
+  margin-top: 15px;
+}
+.box{
+  width: 100%;
+  display: block
+}
+.box_shadow {
+  height: 150px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1.145px 5.89px 12.35px 0.65px rgba(15, 32, 50, 0.1);
+}
 
 .btn-blue-gradient {
     border: none !important; 

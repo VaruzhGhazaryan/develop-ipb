@@ -1,0 +1,13 @@
+.region_name{
+    font-size: 29px;
+    font-family: 'FedraSansPro-Medium';
+}
+.change_region > div{
+    display: inline-block;
+    padding: 0 10px;
+}
+.change_region .dropdown-toggle{
+    color: #24aae6;
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+body{
+    font-family: 'FedraSansPro-Light';
+    background-color: #f7f9fa;
+}
+li>a {
+    color: #116480 !important;
+}
+
+.btn-blue-gradient {
+    border: none !important; 
+    outline: none !important; 
+    color: #fff !important;
+    padding: 10px 40px !important;
+    background-image: -moz-linear-gradient( 90deg, rgb(36,170,230) 0%, rgb(153,215,243) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(36,170,230) 0%, rgb(153,215,243) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(36,170,230) 0%, rgb(153,215,243) 100%);
+    box-shadow: 0px 3px 13px 0px rgba(44, 173, 231, 0.48);
+  }
+
+  .btn-blue-gradient:active {
+    background-image: -moz-linear-gradient( 90deg, rgb(36,170,230) 50%, rgb(153,215,243) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(36,170,230) 50%, rgb(153,215,243) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(36,170,230) 50%, rgb(153,215,243) 100%);
+    box-shadow: 0px 3px 5px 0px rgba(44, 173, 231, 0.48);
+  }
+
+  /* Filters */
+
+  .nice-select{
+      width: 100%;
+      border-radius: 30px;
+  }
+  .fltr-view{
+    margin-top: 25px;
+  }
+  .form_datetime input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #e8e8e8;
+  }

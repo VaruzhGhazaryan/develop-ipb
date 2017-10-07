@@ -1,0 +1,12 @@
+
+/* font-family: 'FedraSansPro-Light' */
+@import url('../fonts/fedra-sans/light/styles.css');
+
+/* font-family: 'FedraSansPro-Medium' */
+@import url('../fonts/fedra-sans/medium/styles.css');
+
+/* font-family: 'FedraSansPro-Book' */
+@import url('../fonts/fedra-sans/book/styles.css');
+
+/* font-family: 'FedraSansPro-NormalItalic'; */
+@import url('../fonts/fedra-sans/normal/styles.css');

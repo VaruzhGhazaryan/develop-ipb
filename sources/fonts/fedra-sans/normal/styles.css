@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'FedraSansPro-NormalItalic';
+  src: url('FedraSansPro-NormalItalic.eot?#iefix') format('embedded-opentype'),  url('FedraSansPro-NormalItalic.otf')  format('opentype'),
+	     url('FedraSansPro-NormalItalic.woff') format('woff'), url('FedraSansPro-NormalItalic.ttf')  format('truetype'), url('FedraSansPro-NormalItalic.svg#FedraSansPro-NormalItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

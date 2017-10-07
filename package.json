@@ -1,0 +1,22 @@
+{
+  "name": "DevelopIBP",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^2.5.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-datetimepicker-npm": "^4.17.37-npm",
+    "jquery": "^3.2.1",
+    "jquery-nice-select": "^1.1.0",
+    "jquery-ui-dist": "^1.12.1"
+  }
+}

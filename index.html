@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="BrainFors LLC">
+
+    <title>DEVELOP-IPB</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+    <link href="sources/dist/date-picker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <!-- Custom styles for the template -->
+    <link href="sources/css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="nav">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="sources/img/logo.png" alt="">
+            </a>
+          </div>
+          
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-active"><a href="#">Компания</a></li>
+              <li><a href="#">Online продажи</a></li>
+              <li><a href="#">Продукты</a></li>
+              <li><a href="#">Пресс-Секция</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li>
+                <a class="btn btn-default btn-outline btn-circle collapsed btn-blue-gradient">Войти</a>
+              </li>
+            </ul>
+            <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Online продажи</a></li>
+              <li><a href="#">Продукты</a></li>
+              <li><a href="#">Пресс-Секция</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+      </div>
+
+    <!-- Filters Content -->
+    <div class="container">
+      <div class="filter_region">
+        <div class="col-md-6">
+          <div class="row change_region">
+            <div><h2 class="region_name">Москва</h2></div>
+            <div>
+              <div class="dropdown">
+                <a class="dropdown-toggle" type="button" data-toggle="dropdown">Выбрать другой регион</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Самара</a></li>
+                  <li><a href="#">Саратов</a></li>
+                  <li><a href="#">Томск</a></li>
+                  <li><a href="#">Санкт-Петербург</a></li>
+                  <li><a href="#">Грозный</a></li>
+                  <li><a href="#">Нижний Новгород</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="aaa">
+            <div class="checkbox">
+              <label class="checkbox-inline"><input type="checkbox" value="">Широкоформатная реклама</label>
+              <label class="checkbox-inline"><input type="checkbox" value="">Стандарт</label>
+              <label class="checkbox-inline"><input type="checkbox" value="">Стандарт +</label>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+              <div class="col-md-4">
+                  <p class="fltr-view">Показов в сутки:</p>
+                  <select name="" id="cntByDay">
+                    <option value="0">50</option>
+                    <option value="1">90</option>
+                    <option value="2">200</option>
+                    <option value="3">310</option>
+                    <option value="4">480</option>
+                    <option value="5">620</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                    <p class="fltr-view">Показов в сутки:</p>
+                    <div class="input-append date form_datetime">
+                        <input size="16" type="text" value="2017-08-13" readonly>
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>           
+                </div>
+                <div class="col-md-4">
+                    <p class="fltr-view">Показов в сутки:</p>
+                    <div class="input-append date form_datetime">
+                        <input size="16" type="text" value="" readonly>
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    <!-- </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="sources/dist/date-picker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="sources/dist/date-picker/js/locales/bootstrap-datetimepicker.ru.js"></script>
+    <script src="sources/js/script.js"></script>
+
+  </body>
+
+</html>

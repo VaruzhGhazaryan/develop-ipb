@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'FedraSansPro-Book';
+  src: url('FedraSansPro-Book.eot?#iefix') format('embedded-opentype'),  url('FedraSansPro-Book.otf')  format('opentype'),
+	     url('FedraSansPro-Book.woff') format('woff'), url('FedraSansPro-Book.ttf')  format('truetype'), url('FedraSansPro-Book.svg#FedraSansPro-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

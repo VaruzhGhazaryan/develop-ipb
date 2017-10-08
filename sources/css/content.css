@@ -1,0 +1,11 @@
+.list-header{
+    border-bottom: 1px solid #e8e8e8;
+}
+.list-header h4{
+    font-family: "FedraSansPro-Medium";
+    font-weight: 700;
+}
+.list-header h5{
+    font-family: "FedraSansPro-Medium";
+    font-weight: 400;
+}

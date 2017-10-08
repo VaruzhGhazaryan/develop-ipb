@@ -13,7 +13,9 @@
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="node_modules/jquery-nice-select/css/nice-select.css" rel="stylesheet">
-    <link href="sources/dist/date-picker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="sources/dist/date-picker/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="node_modules\bootstrap-slider\dist\css\bootstrap-slider.min.css" rel="stylesheet">
 
     <!-- Custom styles for the template -->
     <link href="sources/css/main.css" rel="stylesheet">
@@ -103,39 +105,223 @@
                     <option value="4">480</option>
                     <option value="5">620</option>
                   </select>
+                  <i class="fa fa-caret-down input-caret" aria-hidden="true"></i>
                 </div>
                 <div class="col-md-4">
                     <p class="fltr-view">Показов в сутки:</p>
                     <div class="input-append date form_datetime">
-                        <input size="16" type="text" value="2017-08-13" readonly>
+                        <input class="btn-border btn-white wh100" size="16" type="text" value="20 Сентября 2017" readonly>
                         <span class="add-on"><i class="icon-th"></i></span>
                     </div>           
+                    <i class="fa fa-caret-down input-caret" aria-hidden="true"></i>
                 </div>
                 <div class="col-md-4">
                     <p class="fltr-view">Показов в сутки:</p>
                     <div class="input-append date form_datetime">
-                        <input size="16" type="text" value="" readonly>
+                        <input class="btn-border btn-white wh100" size="16" type="text" value="20 Октября 2017" readonly>
                         <span class="add-on"><i class="icon-th"></i></span>
                     </div>
+                    <i class="fa fa-caret-down input-caret" aria-hidden="true"></i>
                 </div>
           </div>
-        </div>        
+        </div> 
+        <div class="clearfix"></div>       
       </div>
+
+      <!-- filter Tabs-->
       <div class="col-md-12">
-        <div  class="box box_shadow mt-15"></div>
+        <div  class="box box_shadow box_tab mt-15">
+          <div class="tab-wrap">
+            
+              <input type="radio" name="tabs" id="tab1" checked>
+              <div class="tab-label-content" id="tab1-content">
+                <label for="tab1">Цена за неделю показа</label>
+                <div class="tab-content">
+                  <div class="col-md-12">
+                    <div class="col-md-10 col-md-offset-1">
+                      <div class="col-md-3">
+                        <form class="form-inline">
+                          <div class="form-group price-field">
+                            <label for="price-from">От</label>
+                            <input type="text" class="form-control btn-border wh100" id="price-from" value="150 000 руб.">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <input id="price-filter-slide" type="text" class="span2" value="" 
+                                data-slider-min="0" 
+                                data-slider-max="20000000" 
+                                data-slider-step="10000" 
+                                data-slider-value="[150000,15000000]"/>
+                      </div>
+                      <div class="col-md-3">
+                        <form class="form-inline">
+                          <div class="form-group price-field">
+                            <label for="price-from">До</label>
+                            <input type="text" class="form-control btn-border wh100" id="price-from" value="150 000 000 руб.">
+                          </div>
+                        </form>                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <input type="radio" name="tabs" id="tab2">
+              <div class="tab-label-content" id="tab2-content">
+                <label for="tab2">Локация</label>
+                <div class="tab-content">Tab2</div>
+              </div>
+              
+              <input type="radio" name="tabs" id="tab3">
+              <div class="tab-label-content" id="tab3-content">
+                <label for="tab3">Наличие топлива на АЗС</label>
+                <div class="tab-content">Tab3</div>
+              </div>
+            
+               <input type="radio" name="tabs" id="tab4">
+               <div class="tab-label-content" id="tab4-content">
+                <label for="tab4">Услуги заправки</label>
+                <div class="tab-content">Tab4</div>
+              </div>
+              
+              <input type="radio" name="tabs" id="tab5">
+              <div class="tab-label-content" id="tab2-content">
+                <label for="tab5">Уровень трафика</label>
+                <div class="tab-content">Tab5</div>
+              </div>
+              
+              <input type="radio" name="tabs" id="tab6">
+              <div class="tab-label-content" id="tab3-content">
+                <label for="tab6">Гендер</label>
+                <div class="tab-content">Tab6</div>
+              </div>
+            
+               <input type="radio" name="tabs" id="tab7">
+               <div class="tab-label-content" id="tab4-content">
+                <label for="tab7">Уровень потребления</label>
+                <div class="tab-content">Tab7</div>
+              </div>
+
+              <div class="slide"></div>
+            
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <!-- filter Labels -->
         <div class="label-box">
           <div class="row">
               <div class="col-md-8">
-                  <span class="label-item" data-filter='price'>От 150 000 руб. до 150 000 000 руб.</span>
-                  <span class="label-item" data-filter='price'>От 150 000 руб. до 150 000 000 руб.</span>
+                  <div class="label-item" data-filter='price'><text>От 150 000 руб. до 150 000 000 руб.</text> <i class="fa fa-times"></i></div>
+                  <div class="label-item" data-filter='price'><text>Москва</text> <i class="fa fa-times"></i></div>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                  <button class="btn btn-border filter-clear">Очистить все фильтры</button>
+                </div>
                 <div class="clearfix"></div>
           </div>
         </div>
-      </div>
-      
+
+        <!-- sort filters -->
+        <div class="sort-box">
+          <div class="row">
+            <span class="vcenter sort-by-text">Сортировать по:</span>
+            <div class="col-md-3 vcenter">
+              <select name="" id="price-for-week">
+                <option value="0">Цена за неделю показа</option>
+                <option value="1">Цена за неделю показа</option>
+                <option value="2">Цена за неделю показа</option>
+                <option value="3">Цена за неделю показа</option>
+                <option value="4">Цена за неделю показа</option>
+                <option value="5">Цена за неделю показа</option>
+              </select>
+              <i class="fa fa-caret-down input-caret" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-3 vcenter">
+              <select name="" id="price-for-week">
+                <option value="0">По возрастанию</option>
+                <option value="1">По возрастанию</option>
+                <option value="2">По возрастанию</option>
+                <option value="3">По возрастанию</option>
+                <option value="4">По возрастанию</option>
+                <option value="5">По возрастанию</option>
+              </select>
+              <i class="fa fa-caret-down input-caret" aria-hidden="true"></i>
+            </div>
+            <span class="total-find pull-right mr15 mt-15">Найдено 198 объектов</span>
+          </div>
+        </div>
+      </div>      
     </div>
+    <div class="container pdlr15">
+      <div class="col-md-12">
+        <div class="wh100 white-bg box_shadow">
+            <div class="col-md-6 pd0">
+              <!-- list header -->
+              <div class="list-header pdtb10">
+                <div class="col-md-10">
+                  <h4>Выберите объект</h4>
+                  <p>
+                    <input type="checkbox" name="" id="checkall">
+                    <label for="checkall">Выбрать все объекты</label>
+                  </p>
+                </div>
+                <div class="col-md-2">
+                  <h5 class="text-center">Цена за неделю показа</h5>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <!-- list body -->
+              <div class="list-body">
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+                        </h4>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+                        </h4>
+                      </div>
+                      <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+                        </h4>
+                      </div>
+                      <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-md-6 pd0">fd</div>
+            <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Footer -->
     <!-- <footer class="py-5 bg-dark">
@@ -151,6 +337,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="sources/dist/date-picker/js/bootstrap-datetimepicker.min.js"></script>
     <script src="sources/dist/date-picker/js/locales/bootstrap-datetimepicker.ru.js"></script>
+    <script src="node_modules\bootstrap-slider\dist\bootstrap-slider.min.js"></script>
     <script src="sources/js/script.js"></script>
 
   </body>

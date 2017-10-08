@@ -5,18 +5,36 @@ body{
 li>a {
     color: #116480 !important;
 }
-.mt-15{
-  margin-top: 15px;
-}
+.mt-15 {margin-top: 15px}
+.mr15 {margin-right: 15px}
+.pd0 {padding: 0px}
+.pd15 {padding: 15px}
+.pdlr15 {padding: 0 15px}
+.pdtb10 {padding: 10px 0}
+.pdtb15 {padding: 15px 0}
+.wh100 {width: 100%}
 .box{
   width: 100%;
   display: block
 }
+.white-bg{
+  background:#ffffff;
+}
 .box_shadow {
-  height: 150px;
+  min-height: 150px;
   position: relative;
   background-color: rgb(255, 255, 255);
   box-shadow: 1.145px 5.89px 12.35px 0.65px rgba(15, 32, 50, 0.1);
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+button{
+  outline: none !important ;
 }
 
 .btn-blue-gradient {
@@ -37,18 +55,57 @@ li>a {
     box-shadow: 0px 3px 5px 0px rgba(44, 173, 231, 0.48);
   }
 
+  /* bordered transparent button */
+  .btn-border{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(4, 4, 4, 0.1);
+    background-color: transparent;
+  }
+
+  .btn-border:focus{
+    border-color: #999;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .btn-white{
+    background: #fff
+  }
+
   /* Filters */
 
-  .nice-select{
-      width: 100%;
-      border-radius: 30px;
-  }
   .fltr-view{
     margin-top: 25px;
   }
   .form_datetime input{
     width: 100%;
-    padding: 10px 20px;
+  }
+  .input-caret{
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    color: #cccccc;
+  }
+  .nice-select{
+    width: 100%;
     border-radius: 30px;
-    border: 1px solid #e8e8e8;
+  }
+  .nice-select:after{
+    display: none !important
+  }
+  .filter-clear{
+    position: absolute;
+    border-width: 2px;
+    right: 10px;
+    top: -5px;
+  }
+
+  /* Sort filters */
+  .sort-box{
+    padding: 20px 0;
+  }
+  span.sort-by-text{
+    margin-left: 15px;
+    color: #979899
   }

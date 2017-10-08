@@ -16,10 +16,56 @@
     padding: 25px 20px;
 }
 .label-item {
+    padding: 6px 15px;
+    margin-right: 15px;
+    border-radius: 30px;
+    display: inline-block;
     background-color: rgb(247, 249, 250);
     box-shadow: 0.572px 2.945px 6.65px 0.35px rgba(15, 32, 50, 0.1);
-    padding: 6px;
-    border-radius: 30px;
-    margin-right: 15px
   }
-  
+  .label-item i{
+      font-weight: 100;
+      color: #d44747;
+      margin-left: 5px;
+      cursor: pointer;
+  }
+
+  /* Price filter content */
+  .price-field label{
+      color: #333333 !important;
+      padding: 5px;
+  }
+  .price-field input{
+      height: auto;
+      padding: 10px;
+      width: 145px !important;
+  }
+  .slider-horizontal{
+      width: 100% !important;
+      height: 25px !important;
+      margin-top: 10px;
+  }
+  .slider.slider-horizontal .slider-track{
+      height: 3px;
+      background-color:  #e8eaeb;
+  }
+  .slider-selection{
+    height: 4px !important;
+    margin-top: -1px;
+    box-shadow: none;
+    background: #24aae6;
+    background: -moz-linear-gradient(right, #24aae6 0%, #99d7f3 100%);
+    background: -webkit-linear-gradient(right, #24aae6 0%,#99d7f3 100%);
+    background: linear-gradient(from right, #24aae6 0%,#99d7f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24aae6', endColorstr='#99d7f3',GradientType=1 );
+  }
+  .slider-handle.round{
+    width: 10px;
+    border-radius: 10px;
+    background: #24aae6;
+    background: -moz-linear-gradient(top, #24aae6 0%, #99d7f3 100%);
+    background: -webkit-linear-gradient(top, #24aae6 0%,#99d7f3 100%);
+    background: linear-gradient(to top, #24aae6 0%,#99d7f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24aae6', endColorstr='#99d7f3',GradientType=1 );
+    box-shadow: 0px 3px 13px 0px rgba(44, 173, 231, 0.48);    
+  }

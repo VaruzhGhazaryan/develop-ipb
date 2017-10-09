@@ -85,17 +85,17 @@
             </div>
             <div class="clearfix"></div>
           </div>
-          <div class="aaa">
+          <div class="plans">
             <div class="checkbox">
-              <label class="checkbox-inline"><input type="checkbox" value="">Широкоформатная реклама</label>
-              <label class="checkbox-inline"><input type="checkbox" value="">Стандарт</label>
-              <label class="checkbox-inline"><input type="checkbox" value="">Стандарт +</label>
+              <label for="plan1" class="label--checkbox"><input type="checkbox" value="" id="plan1">Широкоформатная реклама</label>
+              <label for="plan2" class="label--checkbox"><input type="checkbox" value="" id="plan2">Стандарт</label>
+              <label for="plan3" class="label--checkbox"><input type="checkbox" value="" id="plan3">Стандарт +</label>
           </div>
         </div>
         </div>
         <div class="col-md-6">
           <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-xs-4">
                   <p class="fltr-view">Показов в сутки:</p>
                   <select name="" id="cntByDay">
                     <option value="0">50</option>
@@ -107,7 +107,7 @@
                   </select>
                   <i class="fa fa-caret-down input-caret" aria-hidden="true"></i>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-4">
                     <p class="fltr-view">Показов в сутки:</p>
                     <div class="input-append date form_datetime">
                         <input class="btn-border btn-white wh100" size="16" type="text" value="20 Сентября 2017" readonly>
@@ -115,7 +115,7 @@
                     </div>           
                     <i class="fa fa-caret-down input-caret" aria-hidden="true"></i>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-4">
                     <p class="fltr-view">Показов в сутки:</p>
                     <div class="input-append date form_datetime">
                         <input class="btn-border btn-white wh100" size="16" type="text" value="20 Октября 2017" readonly>
@@ -139,7 +139,7 @@
                 <div class="tab-content">
                   <div class="col-md-12">
                     <div class="col-md-10 col-md-offset-1">
-                      <div class="col-md-3">
+                      <div class="col-md-3 col-xs-6">
                         <form class="form-inline">
                           <div class="form-group price-field">
                             <label for="price-from">От</label>
@@ -147,14 +147,14 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 slider-block">
                         <input id="price-filter-slide" type="text" class="span2" value="" 
                                 data-slider-min="0" 
                                 data-slider-max="20000000" 
                                 data-slider-step="10000" 
                                 data-slider-value="[150000,15000000]"/>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-3 col-xs-6">
                         <form class="form-inline">
                           <div class="form-group price-field">
                             <label for="price-from">До</label>
@@ -263,8 +263,10 @@
                 <div class="col-md-10">
                   <h4>Выберите объект</h4>
                   <p>
-                    <input type="checkbox" name="" id="checkall">
-                    <label for="checkall">Выбрать все объекты</label>
+                    <label for="checkall" class="label--checkbox">
+                        <input type="checkbox" name="" id="checkall"> 
+                        Выбрать все объекты                       
+                    </label>
                   </p>
                 </div>
                 <div class="col-md-2">
@@ -277,17 +279,20 @@
                   <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                       <div class="panel-heading pd0 pdtb10">
-                          <div class="col-md-10">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                              <div class="checkbox">
-                                <label><input type="checkbox" value="">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</label>
-                              </div>
-                            </a>
-                            </div>
-                            <div class="col-md-2">
-                              <h5 class="text-center">999 000 руб</h5>
-                            </div>
-                            <div class="clearfix"></div>
+                        <div class="col-md-10">
+                          <div class="checkbox pd0 pull-left">                                
+                            <label for="row1" class="label--checkbox">
+                              <input type="checkbox" value="row1" id="table1">
+                            </label>
+                          </div>                            
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <span class="label-header">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</span>
+                          </a>
+                        </div>
+                        <div class="col-md-2">
+                          <h5 class="text-center">999 000 руб</h5>
+                        </div>
+                        <div class="clearfix"></div>
                       </div>
                       <div id="collapse1" class="panel-collapse collapse in">
                         <div class="panel-body">
@@ -352,11 +357,14 @@
                     <div class="panel panel-default">
                         <div class="panel-heading pd0 pdtb10">
                             <div class="col-md-10">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                <div class="checkbox">
-                                  <label><input type="checkbox" value="">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</label>
-                                </div>
-                              </a>
+                                <div class="checkbox pd0 pull-left">                                
+                                  <label for="row2" class="label--checkbox">
+                                    <input type="checkbox" value="row2" id="table1">
+                                  </label>
+                                </div>                            
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                  <span class="label-header">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</span>
+                                </a>
                               </div>
                               <div class="col-md-2">
                                 <h5 class="text-center">999 000 руб</h5>
@@ -373,11 +381,14 @@
                       <div class="panel panel-default">
                           <div class="panel-heading pd0 pdtb10">
                               <div class="col-md-10">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                  <div class="checkbox">
-                                    <label><input type="checkbox" value="">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</label>
-                                  </div>
-                                </a>
+                                  <div class="checkbox pd0 pull-left">                                
+                                    <label for="row3" class="label--checkbox">
+                                      <input type="checkbox" value="row3" id="table1">
+                                    </label>
+                                  </div>                            
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                    <span class="label-header">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</span>
+                                  </a>
                                 </div>
                                 <div class="col-md-2">
                                   <h5 class="text-center">999 000 руб</h5>
@@ -395,11 +406,14 @@
                       <div class="panel panel-default">
                           <div class="panel-heading pd0 pdtb10">
                               <div class="col-md-10">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                                  <div class="checkbox">
-                                    <label><input type="checkbox" value="">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</label>
-                                  </div>
-                                </a>
+                                  <div class="checkbox pd0 pull-left">                                
+                                    <label for="row4" class="label--checkbox">
+                                      <input type="checkbox" value="row4" id="table1">
+                                    </label>
+                                  </div>                            
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                    <span class="label-header">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</span>
+                                  </a>
                                 </div>
                                 <div class="col-md-2">
                                   <h5 class="text-center">999 000 руб</h5>
@@ -439,9 +453,6 @@
         </div>
       </div>
     </div>
-    
-
-
     <!-- Footer -->
     <footer class="bg-darkBlue">
       <div class="container">

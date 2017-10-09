@@ -1,7 +1,7 @@
 .navbar-brand { position: relative; z-index: 2; height: 110px}
 .navbar-right { margin: 25px 0px;}
 .navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
-
+.navbar-collapse{text-align: center}
 .navbar .navbar-collapse { position: relative; overflow: hidden !important; }
 .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
 .navbar-nav>li>a { color: #116480; font-size: 14px !important; text-transform: uppercase; padding: 20px}

@@ -1,11 +1,20 @@
 /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
-
+        .small-btn {
+            padding: 5px 8px !important;
+            margin: 0 5px;
+        }
+        .footer-nav li a{
+            padding: 20px;            
+        }
+        .navbar-nav>li>a {
+            padding: 20px 14px;
+            font-size: 12px !important;
+        }
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
-
     }
 
     /* Small Devices, Tablets */
@@ -33,8 +42,17 @@
         .navbar.navbar-inverse .nav-collapse.in.slide-down {
             transform: translate(0px,0px);
         }
+        .navbar-brand{
+            height: 60px;
+        }
+        .navbar-brand img{
+            width: 80px;
+        }
         .box_shadow{
             min-height: 200px;
+        }
+        .text-center-xs{
+            text-align: center
         }
         .slider-block{
             position: absolute;
@@ -63,11 +81,138 @@
         .input-caret{
             bottom: 10px;
         }
+        .span.sort-by-text{
+            font-size: 12px;
+        }
+        .total-find{
+            margin-top: 5px;
+        }
+        .footer-nav{
+            width: 100%;
+        }
+        .footer-nav li{
+            display: inline-block;
+            margin: -15px 0px;
+        }
     }
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
-
+        body {
+            overflow-x: hidden;
+        }
+        .pd0-xs{
+            padding: 0px;
+        }
+        .pdlr15 {
+            padding: 0 0px;
+        }
+        .checkbox > label{
+            display: block;
+            width: 100%;
+        }
+        .show-filters  div[class ^= col-]{
+            width: 100%;
+        }
+        .tab-wrap{
+            display: block !important;
+        }
+        .tab-wrap .tab-label-content{
+            padding: 5px 0;
+        }
+        .tab-label-content > label{
+            padding: 5px 0;
+            height: 10px;
+        }
+        .box_shadow {
+            min-height: 360px;
+        }
+        .tab-label-content .tab-content {
+            top: 220px;
+        }
+        .slider-block{
+            top: 90px;
+        }
+        .fltr-view {
+            margin-top: 10px;
+        }
+        .box_tab {
+            padding: 0 10px;
+        }
+        .price-field input{
+            width: 120px !important;
+        }
+        .label-box .row > div[class ^= col-]{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .label-box .row > div[class ^= col-]:nth-child(2){
+            text-align: center;
+        }
+        
+        .label-item{
+            margin: 5px 0; 
+            width: 100%;
+        }
+        .label-item text{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 92%;
+            display: block;
+            float: left;
+        }
+        .sort-by-text{
+            width: 100%;
+        }
+        .sort-box div > div{
+            float: left;
+            margin-top: 5px;
+        }
+        .total-find{
+            padding-top: 5px;
+            text-align: center 
+        }
+        .list-body .checkbox label, 
+        .list-body .panel-heading h5, 
+        .label-header{
+            font-size: 10px;
+        }
+        .checkbox, .radio {
+            margin-bottom: 25px;
+        }
+        .list-header h4 {
+            font-weight: 500;
+            font-size: 10px;
+        }
+        .list-header h5 {
+            font-weight: 300;
+            font-size: 12px;
+        }
+        .list-body .img-content img {
+            width: 28.5%;
+        }
+        #map {
+            height: 300px;
+        }
+        .order-box .inline{
+            display: block
+        }
+        .order-checkout,
+        .btn-calculate{
+            margin: 5px 0;
+            width: 100%;
+        }
+        .social li {
+            padding: 5px 0;
+        }
+        .social li i{
+            font-size: 14px;
+            padding: 5px 2px;
+        }
+        .copyright {
+            font-size: 10px;
+        }
 
     }
 

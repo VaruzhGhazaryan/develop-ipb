@@ -200,14 +200,19 @@ button{
     width: 100%;
     border-radius: 30px;
   }
+  .nice-select span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
   .nice-select:after{
     display: none !important
   }
   .filter-clear{
-    position: absolute;
-    border-width: 2px;
-    right: 10px;
     top: -5px;
+    margin-top: -5px;
+    margin-bottom: -5px;
   }
 
   /* Sort filters */

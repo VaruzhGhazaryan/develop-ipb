@@ -2,6 +2,7 @@
 
 $(function(){
     $('#cntByDay, #price-for-week').niceSelect();
+
     $(".form_datetime").datetimepicker({
         minView: 2, 
         pickTime: false,
@@ -10,11 +11,20 @@ $(function(){
         pickerPosition: 'bottom-right',
         language:'ru',
     });
+
     $('#price-filter-slide').slider({
         formatter: function(value) {
             return 'От: ' + value + ' руб.';
         }
     });
+
+    $('.remove-label').click(function(){
+        $(this).parent('.label-item').remove();
+    })
+    $('#checkall').click(function(){
+        $('.panel-default input').prop('checked', !$(this).prop('checked'));
+        $('.panel-default input').trigger('click');
+    })
 })
 
     // Init google maps

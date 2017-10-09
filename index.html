@@ -93,7 +93,7 @@
           </div>
         </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 show-filters">
           <div class="row">
               <div class="col-md-4 col-xs-4">
                   <p class="fltr-view">Показов в сутки:</p>
@@ -129,7 +129,7 @@
       </div>
 
       <!-- filter Tabs-->
-      <div class="col-md-12">
+      <div class="col-md-12 pd0-xs">
         <div  class="box box_shadow box_tab mt-15">
           <div class="tab-wrap">
             
@@ -137,9 +137,9 @@
               <div class="tab-label-content" id="tab1-content">
                 <label for="tab1">Цена за неделю показа</label>
                 <div class="tab-content">
-                  <div class="col-md-12">
-                    <div class="col-md-10 col-md-offset-1">
-                      <div class="col-md-3 col-xs-6">
+                  <div class="col-md-12 pd0-xs">
+                    <div class="col-lg-10 col-lg-offset-1 pd0-xs col-md-12">
+                      <div class="col-md-3 col-xs-6 pd0-xs">
                         <form class="form-inline">
                           <div class="form-group price-field">
                             <label for="price-from">От</label>
@@ -154,7 +154,7 @@
                                 data-slider-step="10000" 
                                 data-slider-value="[150000,15000000]"/>
                       </div>
-                      <div class="col-md-3 col-xs-6">
+                      <div class="col-md-3 col-xs-6 pd0-xs">
                         <form class="form-inline">
                           <div class="form-group price-field">
                             <label for="price-from">До</label>
@@ -203,7 +203,7 @@
                 <div class="tab-content">Tab7</div>
               </div>
 
-              <div class="slide"></div>
+              <div class="slide hidden-xs"></div>
             
           </div>
           <div class="clearfix"></div>
@@ -213,11 +213,11 @@
         <div class="label-box">
           <div class="row">
               <div class="col-md-8 col-xs-8">
-                  <div class="label-item" data-filter='price'><text>От 150 000 руб. до 150 000 000 руб.</text> <i class="fa fa-times"></i></div>
-                  <div class="label-item" data-filter='price'><text>Москва</text> <i class="fa fa-times"></i></div>
+                  <div class="label-item" data-filter='price'><text>От 150 000 руб. до 150 000 000 руб.</text> <i class="fa fa-times remove-label"></i></div>
+                  <div class="label-item" data-filter='price'><text>Москва</text> <i class="fa fa-times remove-label"></i></div>
                 </div>
                 <div class="col-md-4 col-xs-4">
-                  <button class="btn btn-border filter-clear">Очистить все фильтры</button>
+                  <button class="btn btn-border filter-clear pull-right">Очистить все фильтры</button>
                 </div>
                 <div class="clearfix"></div>
           </div>
@@ -227,7 +227,7 @@
         <div class="sort-box">
           <div class="row">
             <span class="vcenter sort-by-text">Сортировать по:</span>
-            <div class="col-md-3 vcenter">
+            <div class="col-md-3 col-xs-12 vcenter">
               <select name="" id="price-for-week">
                 <option value="0">Цена за неделю показа</option>
                 <option value="1">Цена за неделю показа</option>
@@ -238,7 +238,7 @@
               </select>
               <i class="fa fa-caret-down input-caret" aria-hidden="true"></i>
             </div>
-            <div class="col-md-3 vcenter">
+            <div class="col-md-3 col-xs-12 vcenter">
               <select name="" id="price-for-week">
                 <option value="0">По возрастанию</option>
                 <option value="1">По возрастанию</option>
@@ -260,7 +260,7 @@
             <div class="col-md-6 pd0">
               <!-- list header -->
               <div class="list-header pdtb10">
-                <div class="col-md-10">
+                <div class="col-md-10 col-xs-9">
                   <h4>Выберите объект</h4>
                   <p>
                     <label for="checkall" class="label--checkbox">
@@ -269,7 +269,7 @@
                     </label>
                   </p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-xs-3">
                   <h5 class="text-center">Цена за неделю показа</h5>
                 </div>
                 <div class="clearfix"></div>
@@ -279,7 +279,7 @@
                   <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                       <div class="panel-heading pd0 pdtb10">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-xs-9">
                           <div class="checkbox pd0 pull-left">                                
                             <label for="row1" class="label--checkbox">
                               <input type="checkbox" value="row1" id="table1">
@@ -289,7 +289,7 @@
                             <span class="label-header">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</span>
                           </a>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-xs-3">
                           <h5 class="text-center">999 000 руб</h5>
                         </div>
                         <div class="clearfix"></div>
@@ -298,7 +298,7 @@
                         <div class="panel-body">
                           <div class="col-md-12">
                             <div class="100vh">
-                              <div class="col-md-10">
+                              <div class="col-md-10 col-xs-12">
                                   <table class="table table-striped">
                                       <tbody>
                                         <tr>
@@ -329,7 +329,7 @@
                                     </table>
                               </div>
                               <span>Специальный трафик:</span><br><br>
-                              <div class="col-md-10">
+                              <div class="col-md-10 col-xs-12">
                                   <table class="table table-striped">
                                       <tbody>
                                         <tr>
@@ -343,7 +343,7 @@
                                       </tbody>
                                     </table>
                               </div>
-                              <div class="img-content col-md-10">
+                              <div class="img-content col-md-10 col-xs-12">
                                 <img src="sources/uploads/Layer-7.png" alt="banner 1">
                                 <img src="sources/uploads/Layer-8.png" alt="banner 2">
                                 <img src="sources/uploads/Layer-9.png" alt="banner 3">
@@ -356,7 +356,7 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading pd0 pdtb10">
-                            <div class="col-md-10">
+                            <div class="col-md-10 col-xs-10">
                                 <div class="checkbox pd0 pull-left">                                
                                   <label for="row2" class="label--checkbox">
                                     <input type="checkbox" value="row2" id="table1">
@@ -366,7 +366,7 @@
                                   <span class="label-header">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</span>
                                 </a>
                               </div>
-                              <div class="col-md-2">
+                              <div class="col-md-2 col-xs-2">
                                 <h5 class="text-center">999 000 руб</h5>
                               </div>
                               <div class="clearfix"></div>
@@ -380,7 +380,7 @@
 
                       <div class="panel panel-default">
                           <div class="panel-heading pd0 pdtb10">
-                              <div class="col-md-10">
+                              <div class="col-md-10 col-xs-10">
                                   <div class="checkbox pd0 pull-left">                                
                                     <label for="row3" class="label--checkbox">
                                       <input type="checkbox" value="row3" id="table1">
@@ -390,7 +390,7 @@
                                     <span class="label-header">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</span>
                                   </a>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-xs-2">
                                   <h5 class="text-center">999 000 руб</h5>
                                 </div>
                                 <div class="clearfix"></div>
@@ -405,7 +405,7 @@
                         
                       <div class="panel panel-default">
                           <div class="panel-heading pd0 pdtb10">
-                              <div class="col-md-10">
+                              <div class="col-md-10 col-xs-10">
                                   <div class="checkbox pd0 pull-left">                                
                                     <label for="row4" class="label--checkbox">
                                       <input type="checkbox" value="row4" id="table1">
@@ -415,7 +415,7 @@
                                     <span class="label-header">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернадского (призмавижн), (светофор)</span>
                                   </a>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-xs-2">
                                   <h5 class="text-center">999 000 руб</h5>
                                 </div>
                                 <div class="clearfix"></div>
@@ -438,14 +438,14 @@
           </div>
           <div class="label-box order-box">
               <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 text-center-xs">
                       <div class="inline vcenter pdlr15"><h5>Ваш заказ</h5></div>
                       <div class="inline vcenter pdlr15">Выбрано объектов: <span class="checked-items">0</span></div>
                       <div class="inline vcenter pdlr15">Сумма: <span class="checked-total-price">0</span> руб.</div>
                     </div>
-                    <div class="col-md-6 text-right">
-                      <button class="btn btn-border small-btn btn-calculate">Расчитать рекламную кампанию</button>
-                      <a class="btn btn-default small-btn btn-outline btn-circle collapsed btn-blue-gradient">Сформировать заказ</a>
+                    <div class="col-md-6 text-right text-center-xs">
+                      <button class="btn btn-border small-btn btn-calculate ">Расчитать рекламную кампанию</button>
+                      <a class="btn btn-default small-btn btn-outline btn-circle collapsed btn-blue-gradient order-checkout">Сформировать заказ</a>
                     </div>
                     <div class="clearfix"></div>
               </div>
@@ -458,14 +458,14 @@
       <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="row">
-                <div class="col-md-4">
-                    <div class="navbar-header85">
+                <div class="col-md-4 col-xs-6">
+                    <div class="navbar-header">
                         <a class="navbar-brand" href="#">
                           <img src="sources/img/logo-dark.png" alt="">
                         </a>
                       </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 col-xs-6">
                     <ul class="nav navbar-nav footer-nav pull-right">
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Online продажи</a></li>
@@ -478,12 +478,12 @@
               </div>
       </div>
       <div class="100wh bg-dark">
-        <div class="container">
+        <div class="container pd0-xs">
           <div class="">
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-6">
               <p class="copyright">© 2017 Все права защищены</p>
             </div>
-            <div class="col-md-6 text-right">
+            <div class="col-md-6 col-xs-6 text-right">
               <ul class="social">
                 <li><a href=""><i class="fa fa-vk"></i></a></li>
                 <li><a href=""><i class="fa fa-facebook"></i></a></li>

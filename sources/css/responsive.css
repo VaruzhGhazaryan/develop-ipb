@@ -62,7 +62,7 @@
         .label-item,
         .price-field input,
         .filter-clear{
-            font-size: 12px;
+            font-size: 10px;
         }
         .filter-clear{
             top: 0px;
@@ -77,6 +77,11 @@
         .nice-select{
             height: 32px;
             line-height: 30px;
+            margin-top: 5px;
+        }
+
+        .filter-clear {
+            margin-top: 0px;
         }
         .input-caret{
             bottom: 10px;

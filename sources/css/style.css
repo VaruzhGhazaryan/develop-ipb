@@ -20,6 +20,12 @@ li>a {
 .white-bg{
   background:#ffffff;
 }
+.bg-darkBlue{
+  background-color: #0a4a66;
+}
+.bg-dark{
+  background: rgba(0, 0, 0, 0.25);
+}
 .box_shadow {
   min-height: 150px;
   position: relative;
@@ -109,3 +115,112 @@ button{
     margin-left: 15px;
     color: #979899
   }
+  .list-body #accordion{
+    height: 500px;
+    overflow: auto;
+  }
+  .list-body .panel-default{
+    border-radius: 0px;
+    border: 0px;
+    background: none;
+  }
+  .list-body .panel-group .panel-heading+.panel-collapse>.list-group, 
+  .list-body .panel-group .panel-heading+.panel-collapse>.panel-body{
+    border: 0px;
+  }
+  .list-body .panel-default>.panel-heading{
+    background: none;
+  }
+  .list-body .checkbox label,
+  .list-body .panel-heading h5{
+    color: #333;
+    font-family: 'FedraSansPro-Medium';
+  }
+  .list-body table tr td{
+    border: none;
+    color: #888888;
+  }
+  .list-body .img-content img {
+    width: 30.5%;
+    float: left;
+    margin: 0 5px;
+}
+
+/* table scrollbar style */
+.list-body #accordion::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.list-body .panel-group{
+  margin-bottom: 0px;
+}
+.list-body #accordion::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+
+.list-body #accordion::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #c9c9c9;
+}
+#map{
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+/* Order content */
+.order-box h5{
+  font-family: 'FedraSansPro-Medium';
+  font-weight: bold
+}
+.small-btn{
+  padding: 5px 15px !important;
+  margin: 0 5px;
+}
+/* footer */
+footer{
+  margin-top: 50px;
+}
+footer .navbar-brand{
+  height: auto;
+}
+footer .navbar-brand img{
+  height: 68px;
+  width: auto;
+}
+.footer-nav{
+  padding: 19px 0;
+}
+.footer-nav li a{
+  color: #abd0e0 !important;
+  padding: 20px 25px;
+  font-size: 12px !important;  
+}
+.footer-nav li a:hover{
+  background: none;
+  text-decoration: underline
+}
+.social{
+  margin: 0;
+  padding: 5px 0;
+}
+.social li{
+  display: inline;
+  padding: 5px;
+}
+.social li i{
+  font-size: 14px;
+  color: #51869d;
+  padding: 5px;
+}
+.copyright{
+  font-size: 12px;
+  color: #51869d;
+  padding: 10px 0;
+  margin: 0;
+}

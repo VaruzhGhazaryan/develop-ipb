@@ -34,12 +34,34 @@
             transform: translate(0px,0px);
         }
         .box_shadow{
-            min-height: 300px;
+            min-height: 200px;
         }
         .slider-block{
             position: absolute;
             width: 100%;
-            top: 100px;
+            top: 50px;
+        }
+        .label-item,
+        .price-field input,
+        .filter-clear{
+            font-size: 12px;
+        }
+        .filter-clear{
+            top: 0px;
+        }
+        .btn-border{
+            padding: 5px 10px;
+        }
+        .price-field label{
+            float: left;
+            padding: 10px;
+        }
+        .nice-select{
+            height: 32px;
+            line-height: 30px;
+        }
+        .input-caret{
+            bottom: 10px;
         }
     }
 
